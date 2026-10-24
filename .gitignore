@@ -1,0 +1,30 @@
+# 忽略规则
+
+# 原始数据（体积过大 / 版权限制）
+*.csv
+!01-taobao-user-behavior/data/user_behavior_sample.csv
+!02-traffic-congestion-gru/data/*.csv
+
+# 密钥与配置
+.env
+config.json
+**/config.json
+*.key
+*.pem
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 论文与个人材料
+*.docx
+*.doc
+*.pdf
+*.pptx
+*.psd
