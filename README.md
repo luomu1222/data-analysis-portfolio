@@ -2,7 +2,7 @@
 
 求职意向：**数据分析师 / BI 工程师**　|　2026 届（沈阳化工大学 · 大数据管理与应用）
 
-📮 3129626902@qq.com　📱 13104299907
+📮 3129626902@qq.com
 
 ---
 
@@ -16,7 +16,7 @@
 
 | # | 项目 | 数据规模 | 用什么做的 |
 |---|---|---|---|
-| 01 | [淘宝用户行为分析](./01-taobao-user-behavior) | 1.0 亿条行为日志 · 5 万用户 · 9 天 | Pandas / Matplotlib |
+| 01 | [淘宝用户行为分析](./01-taobao-user-behavior) | 1.0 亿条原始日志 · 抽样 5.08%（503 万条）· 5 万用户 · 9 天 | Pandas / Matplotlib |
 | 02 | [城市交通拥堵 GRU 预测](./02-traffic-congestion-gru) | 9 天 7776 条 · 24 维特征 · 3 区域 | PyTorch · GRU |
 | 03 | [A/B 实验设计与分析框架](./03-ab-experiment) | 真实基线 19.26% · 日均 UV 77 万 · 模拟 140 万样本 | Python 标准库 / Matplotlib |
 | 04 | [电商用户行为 MySQL 数据仓库](./04-mysql-data-warehouse) | **1.0015 亿行** · 四层分层 · SCD2 拉链表 | MySQL / 窗口函数 / CTE |
