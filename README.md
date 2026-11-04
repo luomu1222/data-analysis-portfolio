@@ -19,6 +19,7 @@
 | 01 | [淘宝用户行为分析](./01-taobao-user-behavior) | 1.0 亿条行为日志 · 5 万用户 · 9 天 | Pandas / Matplotlib |
 | 02 | [城市交通拥堵 GRU 预测](./02-traffic-congestion-gru) | 9 天 7776 条 · 24 维特征 · 3 区域 | PyTorch · GRU |
 | 03 | [A/B 实验设计与分析框架](./03-ab-experiment) | 真实基线 19.26% · 日均 UV 77 万 · 模拟 140 万样本 | Python 标准库 / Matplotlib |
+| 04 | [电商用户行为 MySQL 数据仓库](./04-mysql-data-warehouse) | **1.0015 亿行** · 四层分层 · SCD2 拉链表 | MySQL / 窗口函数 / CTE |
 
 ---
 
@@ -86,6 +87,30 @@
 ![窥探次数 vs 假阳性率](./03-ab-experiment/fig2_peeking.png)
 
 > 诚实说明：真实数据里没有实验变量，**策略效应是模拟的**；基线转化率、样本规模、方差、检验方法与决策规则全部按真实口径走。这是"用真数据验证方法论"，不是伪造实验结果。
+
+---
+
+## 04 · 电商用户行为 MySQL 数据仓库
+
+用 MySQL 单机把 **1.0015 亿行**原始日志搭成 ODS → DWD → DWS → ADS 四层数仓，含拉链表 SCD2、脏数据隔离和上下游对账。
+
+**不是为了炫技术栈，是为了回答三个问题**：重复上报会不会把指标算两遍？时区切错会丢多少数据？出了问题是能不能说清少在哪？
+
+**关键数字**
+
+- 对账三层闭合：ODS 100,150,807 = DWD 100,095,182 + 脏数据 55,576 + 完全重复 49
+- 四键去重（user_id / item_id / ts / behavior）实测只剔除 **49 行**，重复率 4.9e-7
+- 时区修正救回 **118 万行**：ts 是 Unix 秒但业务按北京时间算天，切日必须 `timegm(day) - 8*3600`
+- 按 3 小时分批去重，避开单次大排序打穿 buffer pool（全程 56 分钟）
+
+**两份文档才是重点**
+
+- [`METRICS.md`](./04-mysql-data-warehouse/METRICS.md)：每个指标的定义与口径边界，外加**这份数据算不了的 8 个指标**（GMV / 客单价 / 退款率 / ROI…）
+- [`DQ_REPORT.md`](./04-mysql-data-warehouse/DQ_REPORT.md)：质量校验报告，P0/P1/P2 分级 + 对账明细 + 可复现命令
+
+**一次真实排障**：按天整块跑 `ROW_NUMBER` 去重时 MySQL 直接崩了，日志刷 `Difficult to find free blocks in the buffer pool`——buffer pool 默认 128M 撑不住 5.7 GB 表 + 1100 万行排序。改成 6G + 分批之后跑通。
+
+> 面试被问「为什么没有 GMV」，答案是「数据没有价格字段，所以我用订单数和转化率」——比硬编一个数字安全一万倍。
 
 ---
 
