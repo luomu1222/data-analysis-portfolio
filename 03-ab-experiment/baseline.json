@@ -1,0 +1,291 @@
+{
+  "days": [
+    {
+      "dt": "2017-11-25",
+      "pv": 9353416,
+      "uv": 706641,
+      "buy_uv": 132622,
+      "cvr": 0.187679
+    },
+    {
+      "dt": "2017-11-26",
+      "pv": 9567422,
+      "uv": 715516,
+      "buy_uv": 136048,
+      "cvr": 0.19014
+    },
+    {
+      "dt": "2017-11-27",
+      "pv": 9041186,
+      "uv": 710094,
+      "buy_uv": 146934,
+      "cvr": 0.206922
+    },
+    {
+      "dt": "2017-11-28",
+      "pv": 8842932,
+      "uv": 709257,
+      "buy_uv": 139845,
+      "cvr": 0.197171
+    },
+    {
+      "dt": "2017-11-29",
+      "pv": 9210820,
+      "uv": 718922,
+      "buy_uv": 146220,
+      "cvr": 0.203388
+    },
+    {
+      "dt": "2017-11-30",
+      "pv": 9358998,
+      "uv": 730597,
+      "buy_uv": 146128,
+      "cvr": 0.200012
+    },
+    {
+      "dt": "2017-12-01",
+      "pv": 9718956,
+      "uv": 740139,
+      "buy_uv": 139971,
+      "cvr": 0.189114
+    },
+    {
+      "dt": "2017-12-02",
+      "pv": 12329641,
+      "uv": 970401,
+      "buy_uv": 174487,
+      "cvr": 0.179809
+    },
+    {
+      "dt": "2017-12-03",
+      "pv": 12237300,
+      "uv": 966977,
+      "buy_uv": 173225,
+      "cvr": 0.179141
+    }
+  ],
+  "buy_cnt_dist": [
+    {
+      "buy_cnt": 0,
+      "users": 5633064
+    },
+    {
+      "buy_cnt": 1,
+      "users": 948157
+    },
+    {
+      "buy_cnt": 2,
+      "users": 244812
+    },
+    {
+      "buy_cnt": 3,
+      "users": 79279
+    },
+    {
+      "buy_cnt": 4,
+      "users": 31552
+    },
+    {
+      "buy_cnt": 5,
+      "users": 13944
+    },
+    {
+      "buy_cnt": 6,
+      "users": 7237
+    },
+    {
+      "buy_cnt": 7,
+      "users": 3654
+    },
+    {
+      "buy_cnt": 8,
+      "users": 2187
+    },
+    {
+      "buy_cnt": 9,
+      "users": 1378
+    },
+    {
+      "buy_cnt": 10,
+      "users": 873
+    },
+    {
+      "buy_cnt": 11,
+      "users": 598
+    },
+    {
+      "buy_cnt": 12,
+      "users": 448
+    },
+    {
+      "buy_cnt": 13,
+      "users": 309
+    },
+    {
+      "buy_cnt": 14,
+      "users": 232
+    },
+    {
+      "buy_cnt": 15,
+      "users": 142
+    },
+    {
+      "buy_cnt": 16,
+      "users": 116
+    },
+    {
+      "buy_cnt": 17,
+      "users": 76
+    },
+    {
+      "buy_cnt": 18,
+      "users": 75
+    },
+    {
+      "buy_cnt": 19,
+      "users": 61
+    },
+    {
+      "buy_cnt": 20,
+      "users": 55
+    },
+    {
+      "buy_cnt": 21,
+      "users": 39
+    },
+    {
+      "buy_cnt": 22,
+      "users": 39
+    },
+    {
+      "buy_cnt": 23,
+      "users": 20
+    },
+    {
+      "buy_cnt": 24,
+      "users": 30
+    },
+    {
+      "buy_cnt": 25,
+      "users": 27
+    },
+    {
+      "buy_cnt": 26,
+      "users": 16
+    },
+    {
+      "buy_cnt": 27,
+      "users": 20
+    },
+    {
+      "buy_cnt": 28,
+      "users": 12
+    },
+    {
+      "buy_cnt": 29,
+      "users": 10
+    },
+    {
+      "buy_cnt": 30,
+      "users": 11
+    },
+    {
+      "buy_cnt": 31,
+      "users": 7
+    },
+    {
+      "buy_cnt": 32,
+      "users": 6
+    },
+    {
+      "buy_cnt": 33,
+      "users": 10
+    },
+    {
+      "buy_cnt": 34,
+      "users": 6
+    },
+    {
+      "buy_cnt": 35,
+      "users": 3
+    },
+    {
+      "buy_cnt": 36,
+      "users": 3
+    },
+    {
+      "buy_cnt": 37,
+      "users": 4
+    },
+    {
+      "buy_cnt": 38,
+      "users": 4
+    },
+    {
+      "buy_cnt": 39,
+      "users": 1
+    },
+    {
+      "buy_cnt": 40,
+      "users": 1
+    },
+    {
+      "buy_cnt": 41,
+      "users": 2
+    },
+    {
+      "buy_cnt": 42,
+      "users": 5
+    },
+    {
+      "buy_cnt": 44,
+      "users": 3
+    },
+    {
+      "buy_cnt": 46,
+      "users": 2
+    },
+    {
+      "buy_cnt": 47,
+      "users": 1
+    },
+    {
+      "buy_cnt": 49,
+      "users": 2
+    },
+    {
+      "buy_cnt": 50,
+      "users": 3
+    },
+    {
+      "buy_cnt": 51,
+      "users": 1
+    },
+    {
+      "buy_cnt": 55,
+      "users": 2
+    },
+    {
+      "buy_cnt": 73,
+      "users": 1
+    },
+    {
+      "buy_cnt": 77,
+      "users": 1
+    },
+    {
+      "buy_cnt": 88,
+      "users": 1
+    },
+    {
+      "buy_cnt": 148,
+      "users": 1
+    },
+    {
+      "buy_cnt": 190,
+      "users": 1
+    }
+  ],
+  "total_users": 987991,
+  "dws_user_action_rows": 6968544
+}

@@ -1,0 +1,112 @@
+{
+  "p0": 0.192597,
+  "daily_uv": 774283,
+  "sample_size_table": [
+    {
+      "mde_rel": 0.02,
+      "p_treat": 0.196449,
+      "n_per_arm": 164894,
+      "n_total": 329788,
+      "days_needed": 0.47
+    },
+    {
+      "mde_rel": 0.05,
+      "p_treat": 0.202227,
+      "n_per_arm": 26471,
+      "n_total": 52942,
+      "days_needed": 0.07
+    },
+    {
+      "mde_rel": 0.1,
+      "p_treat": 0.211857,
+      "n_per_arm": 6654,
+      "n_total": 13308,
+      "days_needed": 0.02
+    },
+    {
+      "mde_rel": 0.15,
+      "p_treat": 0.221487,
+      "n_per_arm": 2973,
+      "n_total": 5946,
+      "days_needed": 0.01
+    }
+  ],
+  "exp_5pct_lift": {
+    "p_control": 0.19253,
+    "p_treat": 0.20218,
+    "abs_lift": 0.00965,
+    "rel_lift": 0.050122,
+    "z": 14.3442,
+    "p_value": 0.0,
+    "ci95": [
+      0.008332,
+      0.010968
+    ],
+    "se": 0.000673,
+    "n": [
+      700000,
+      700000
+    ],
+    "srm_chi2": 0.0,
+    "srm_p": 1.0,
+    "guardrail_orders": {
+      "control": 0.9562,
+      "treat": 0.9569,
+      "t": 0.4932,
+      "p": 0.621846
+    },
+    "peeking_false_positive_rate": null
+  },
+  "exp_2pct_underpowered": {
+    "p_control": 0.19285,
+    "p_treat": 0.1965,
+    "abs_lift": 0.00365,
+    "rel_lift": 0.018927,
+    "z": 0.9218,
+    "p_value": 0.356616,
+    "ci95": [
+      -0.00411,
+      0.01141
+    ],
+    "se": 0.003959,
+    "n": [
+      20000,
+      20000
+    ],
+    "srm_chi2": 0.0,
+    "srm_p": 1.0,
+    "guardrail_orders": {
+      "control": 0.9632,
+      "treat": 0.9622,
+      "t": -0.1122,
+      "p": 0.910701
+    },
+    "peeking_false_positive_rate": null
+  },
+  "peeking_demo": {
+    "p_control": 0.19406,
+    "p_treat": 0.19147,
+    "abs_lift": -0.00259,
+    "rel_lift": -0.013346,
+    "z": -1.4682,
+    "p_value": 0.142063,
+    "ci95": [
+      -0.006048,
+      0.000868
+    ],
+    "se": 0.001764,
+    "n": [
+      100000,
+      100000
+    ],
+    "srm_chi2": 0.0,
+    "srm_p": 1.0,
+    "guardrail_orders": {
+      "control": 0.9574,
+      "treat": 0.9548,
+      "t": -0.6455,
+      "p": 0.518616
+    },
+    "peeking_false_positive_rate": 0.3875
+  }
+}
